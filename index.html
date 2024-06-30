@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="title-bloc">
+          <h1>Mortgage Calculator</h1>
+          <a href="">Clear All</a>
+        </div>
+        <div class="form-main">
+          <div class="form-input">
+            <label for="amount">Mortgage Amount</label>
+            <div class="input">
+              <div class="input-text">£</div>
+              <input type="text" id="amount" />
+            </div>
+            <p class="error" id="error">This field is required</p>
+          </div>
+          <div class="row">
+            <div class="form-input">
+              <label for="year">Mortgage Term</label>
+              <div class="input">
+                <input type="text" id="mortgage" />
+                <div class="input-text year-text">years</div>
+              </div>
+              <p class="error" id="error1">This field is required</p>
+            </div>
+            <div class="form-input">
+              <label for="interest">Interest Rate</label>
+              <div class="input">
+                <input type="text" id="interest" />
+                <div class="input-text">%</div>
+              </div>
+              <p class="error" id="error2">This field is required</p>
+            </div>
+          </div>
+          <div class="form-footer" id="form-footer">
+            <div class="form-footer-text" for="mortgage">Mortgage Type</div>
+            <label>
+              <input type="radio" name="radio" class="radio-input" id="repay" />
+              <span class="custom-radio"></span>
+              <span>Repayment</span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="radio"
+                class="radio-input"
+                id="interestOnly"
+              />
+              <span class="custom-radio"></span>
+              <span>Interest Only</span>
+            </label>
+            <p class="error" id="error3">This field is required</p>
+          </div>
+        </div>
+        <button type="submit" id="submitBtn">
+          <img src="assets/images/icon-calculator.svg" alt="icon-calculator" />
+          Calculate Repayments
+        </button>
+      </form>
+      <div class="right">
+        <div class="results-start">
+          <img
+            src="assets/images/illustration-empty.svg"
+            alt="illustration-empty"
+          />
+          <h1>Results shown here</h1>
+          <p>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.frontendmentor.io/profile/gery-guedegbe"
+        >Géry GUEDEGBE</a
+      >.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
